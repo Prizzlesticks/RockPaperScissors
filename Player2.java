@@ -16,15 +16,19 @@ public class Player2 extends Player {
 	public Roshambo value() {
 		Scanner scn  = new Scanner(System.in);
         Random rnd = new Random();
-        int randomNumber = rnd.nextInt(3-1+1) + 1;
+        int randomNumber = 0;
+        randomNumber = rnd.nextInt(3-1+1) + 1;
         System.out.println(randomNumber);
         Roshambo oppChoice = null;
      
         if (randomNumber == 1)
+        	System.out.println("Rando choses" + Roshambo.ROCK + ".");
         	oppChoice = Roshambo.ROCK;
-         else if  (randomNumber == 2)
+         if  (randomNumber == 2)
+        	 System.out.println("Rando choses" + Roshambo.PAPER + ".");
             oppChoice = Roshambo.PAPER; 
-         else if  (randomNumber == 3)
+          if  (randomNumber == 3)
+        	  System.out.println("Rando choses" + Roshambo.SCISSORS + ".");
         	oppChoice = Roshambo.SCISSORS;
 		return oppChoice;
         }

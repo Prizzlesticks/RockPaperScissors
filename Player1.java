@@ -11,14 +11,9 @@ public class Player1 extends Player {
 
 	@Override
 	public Roshambo value() {
-		System.out.println("Rocky chooses " + Roshambo.ROCK + ".");
-		return Roshambo.ROCK;
-		
-	}
-
-	
+		return Roshambo.ROCK; 
 		
 	}
 	
-
-
+		
+	}

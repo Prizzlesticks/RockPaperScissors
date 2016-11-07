@@ -8,11 +8,11 @@ public class RpsValidation {
 	
 	public static int opp(int opp) {
 		
-		while ((!(opp == 1)) && (!(opp == 2))) {
+		while ((!(opp == 1)) && (!(opp == 2)) && (!(opp ==3))) {
 			System.out.println("Please enter a valid opponenet number");
 			opp = scan.nextInt(); }
 			
-			if ((opp == 1) || (opp == 2));
+			if ((opp == 1) || (opp == 2) || (opp==3));
 			return opp;
 	}
 		
